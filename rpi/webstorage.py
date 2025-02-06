@@ -6,7 +6,7 @@ import os
 
 filename = datetime.now().strftime("%m-%d-%Y")+".csv"
 
-service = ShareFileClient.from_connection_string(conn_str=connection_string,share_name = "gassensortest", file_path = filename )
+
 #if file does not exist yet, create it.
 if os.path.isfile("gasanalyzerdata/"+filename) == False:
       f = open("gasanalyzerdata/"+filename,'x')
