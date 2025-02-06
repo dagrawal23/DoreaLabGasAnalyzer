@@ -6,7 +6,6 @@ import os
 
 filename = datetime.now().strftime("%m-%d-%Y")+".csv"
 
-connection_string = "DefaultEndpointsProtocol=https;AccountName=airsensorstorage;AccountKey=LFsKI/91D3oxuSrcUDXqwV4XGhSZYhM/d0zR83KZkvYVFh2nxlAUHQVHstUQ3o33TTki2+wuWqdu+AStyO/ViA==;EndpointSuffix=core.windows.net"
 service = ShareFileClient.from_connection_string(conn_str=connection_string,share_name = "gassensortest", file_path = filename )
 #if file does not exist yet, create it.
 if os.path.isfile("gasanalyzerdata/"+filename) == False:
