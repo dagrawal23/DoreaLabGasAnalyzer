@@ -1,44 +1,130 @@
-# Project Overview
+# Gas Analyzer
 
-This repository contains the necessary scripts for Raspberry Pi and Arduino to facilitate LoRa communication and data collection. The system is designed to collect data from multiple nodes, store it locally, and upload it to an Azure SQL database. Some additional setup is required to enable database storage functionality.
+## Core Components
 
-## Raspberry Pi
+- **MQ Sensor Device**  
+  - Powered by [Feather M0 RFM9x](https://www.adafruit.com/product/3178)
 
-The `pi` folder contains Python scripts that manage communication, data collection, and display functionalities. Below is an overview of the key scripts:
+- **PCB Files**  
+  - Altium project in this repository
 
-### Key Scripts
+- **Parts List**  
+  - BOM spreadsheet in this repository
 
-- **`wifi_display.py`**: Displays the IP address of the Raspberry Pi upon boot. This is useful for SSH access.
-- **`single_device_lora.py`**: Manages LoRa communication with a single node.
-- **`multidevice_lora.py`**: Handles LoRa communication with multiple nodes. Node IDs and the number of nodes must be manually configured.
-- **`raspi-blinka.py`**: Installs Blinka, a dependency required for running CircuitPython libraries. For more information, visit:
-  - [CircuitPython](https://circuitpython.org/)
-  - [Running CircuitPython Code on Raspberry Pi](https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/running-circuitpython-code-without-circuitpython)
-- **Testing Scripts (`test-db` and others)**: Various test scripts that may no longer function as expected.
+- **Raspberry Pi Cluster Node**  
+  - Raspberry Pi 4B + Adafruit LoRa Bonnet  
+  - [Buy the LoRa Bonnet](https://www.adafruit.com/product/4074)
 
-### Database Integration
+## Overview
 
-The Raspberry Pi is intended to upload collected data to an Azure SQL database while also storing it locally. Additional configuration is required to establish the database connection and ensure data is uploaded correctly.
+A **Cluster** consists of one Raspberry Pi (the _Coordinator_) and multiple Sensor Nodes.
 
-## Arduino
+- **Device Nodes**  
+  - Each node has a **unique integer ID** (unique across all clusters and devices).  
+  - Must be flashed with its assigned Coordinator (Pi) ID to join the cluster.
 
-The Arduino firmware is responsible for reading ADC values and transmitting data over UART. The following considerations must be taken into account:
+- **Coordinator (Raspberry Pi)**  
+  - Also has its own **unique integer ID** (distinct from all device IDs).  
+  - Maintains a list of Device Node IDs it manages.  
 
-- The **node ID** must be hardcoded in the sketch before flashing.
-- Each device must have a unique ID to avoid conflicts.
-- Reflashing a device requires careful ID management to prevent duplication.
+see image.png for an infographic on this structure
 
-## Setup & Configuration
+## To start data collection
+- Double Click the Gas Analyzer icon on the Desktop of your Pi
+- A dialog box will pop up
+- Click Execute
+## Setting up a New Pi
 
-### Raspberry Pi
+1. **Acquire & Assemble**  
+   - Get a Raspberry Pi 4B, a protective case, and the official Raspberry Pi 7" Touch Display.  
+   - Attach the Adafruit LoRa Bonnet, mount the Pi inside the case, and connect the display.
 
-1. Install necessary dependencies, including CircuitPython and Blinka.
-2. Configure LoRa settings in `single_device_lora.py` or `multidevice_lora.py`.
-3. Ensure database connectivity settings are correctly set up for Azure SQL.
+2. **Clone an Existing SD Card**  
+   - Install [Balena Etcher](https://www.balena.io/etcher/).  
+   - Insert the source SD card (already set up) into your computer.  
+   - Launch Balena Etcher:  
+     1. **Flash from file** → choose the source card’s image.  
+     2. **Select target** → the new SD card.  
+     3. Click **Flash!** and wait for completion.
 
-### Arduino
+3. **Configure the New Pi**  
+   - Boot the new Pi with the cloned SD card.  
+   - Open `/home/rpi/radio_communication_gui.py` in your favorite editor.  
+     - Find the list named `devices`:  
+       ```python
+       devices = [ … ]
+       ```
+       Replace its contents with the integer IDs of your sensor nodes.  
+     - In the `poll_devices` function, locate:  
+       ```python
+       if values[0] == 9876:
+       ```
+       Replace `9876` (the old Pi ID) with your new unique Pi ID.
 
-1. Modify the sketch to set the correct node ID before flashing.
-2. Flash the firmware onto each Arduino device, ensuring unique IDs for all nodes.
+4. **Reboot **  
+   - Save your changes, reboot the Pi
 
 
+
+
+Your new Pi is now ready to coordinate its sensor nodes!
+Make sure the Pi is connected to a wifi (not needed for data collection) but just to ensure correct date and time
+
+## Important Note
+
+> ⚠️ **Do not deploy multiple clusters in close proximity.**  
+> LoRa radio collisions between nearby clusters can lead to undefined behavior and garbage data readings.
+
+## Flashing a Sensor Node
+
+1. **Install Arduino IDE**  
+   - Download and install from https://www.arduino.cc/en/software
+
+2. **Add the RF95 LoRa Library**  
+   - Open Arduino IDE  
+   - Go to **Sketch > Include Library > Manage Libraries…**  
+   - Search for **Adafruit RFM95** and install **Adafruit RFM95 LoRa Radio Library**
+
+3. **Connect the Feather M0**  
+   - Plug your Feather M0 RFM9x into your computer via USB
+
+4. **Open the Firmware Sketch**  
+   - In Arduino IDE, select **File > Open** and choose the `.ino` in `firmware/`
+
+5. **Set the Device ID**  
+   - Navigate to **Line 149**, find:
+     ```c
+     #define DEVICE_ID  1234 (can be a different number)
+     ```
+   - Replace `1234` with the unique integer ID for this node (must not duplicate any other device or Pi)
+
+6. **Set the Coordinator (Pi) ID**  
+   - Navigate to **Line 213**, find:
+     ```c
+     radiopacket[0] = 5678 (can be a different number);
+     ```
+   - Replace `5678` with the integer ID of the Raspberry Pi this node will talk to  
+   - (Ensure the Pi is configured with this same ID in its `radio_communication_gui.py`)
+
+7. **Flash the Node**  
+   - In Arduino IDE’s **Tools > Port**, select your Feather’s port  
+   - In **Tools > Board**, choose **Adafruit Feather M0**  
+   - Click **Upload** (▶️)
+
+Your sensor node is now flashed with its DEVICE_ID and Pi ID—ready to join the cluster!
+
+
+## Functional Overview
+
+- The Raspberry Pi continuously iterates over the `devices` list:  
+  1. Sends a one-byte packet containing a device’s ID.  
+  2. Waits for a set timeout period for a response.  
+    - If a response is received, the Pi logs the data to `/home/pi/gasanalyzerdata`.  
+    - If no response, the device is marked **offline**, and the Pi moves on.  
+
+- Each Sensor Node:  
+  1. Listens for incoming bytes.  
+  2. When a byte matching its own `DEVICE_ID` arrives:  
+     - Performs an ADC measurement.  
+     - Sends the measurement packet back to the Pi over LoRa.  
+     - Returns to listening for its next turn.

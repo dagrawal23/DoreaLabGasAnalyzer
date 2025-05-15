@@ -1,0 +1,59 @@
+Removed Pin From Net: NetName=5.0V Pin=C3-1
+Removed Pin From Net: NetName=GND Pin=C7-1
+Removed Pin From Net: NetName=5.0V Pin=C7-2
+Removed Pin From Net: NetName=GND Pin=C8-1
+Removed Pin From Net: NetName=5.2V Pin=C8-2
+Removed Pin From Net: NetName=5.2V Pin=LED1-2
+Removed Pin From Net: NetName=5.0V Pin=R1-2
+Removed Pin From Net: NetName=GND Pin=R2-1
+Removed Pin From Net: NetName=GND Pin=RLED1-2
+Removed Pin From Net: NetName=GND Pin=RLED2-1
+Removed Pin From Net: NetName=5.0V Pin=U2-1
+Removed Pin From Net: NetName=GND Pin=U2-8
+Removed Pin From Net: NetName=EN Pin=U2-14
+Removed Pin From Net: NetName=5.2V Pin=U2-15
+Removed Pin From Net: NetName=5.2V Pin=U2-16
+Removed Pin From Net: NetName=5.2V Pin=U2-17
+Removed Pin From Net: NetName=GND Pin=U2-18
+Removed Pin From Net: NetName=5.0V Pin=U2-19
+Removed Pin From Net: NetName=5.0V Pin=U2-20
+Removed Pin From Net: NetName=GND Pin=U2-21
+Removed Pin From Net: NetName=5.0V Pin=U3-3
+Removed Member From Class: ClassName=Sheet1 Member=C7
+Removed Member From Class: ClassName=Sheet1 Member=C8
+Removed Member From Class: ClassName=Sheet1 Member=LED1
+Removed Member From Class: ClassName=Sheet1 Member=LED2
+Removed Member From Class: ClassName=Sheet1 Member=R1
+Removed Member From Class: ClassName=Sheet1 Member=R2
+Removed Member From Class: ClassName=Sheet1 Member=RLED1
+Removed Member From Class: ClassName=Sheet1 Member=RLED2
+Removed Member From Class: ClassName=Sheet1 Member=U2
+Added Component: Designator=U?(DDA0008E_M)
+Add component (AddParameter): Name = "Accuracy(%)"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MS-012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.ti.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPS7A7001&fileType=pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.ti.com/litv/pdf/mpds092e"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "SBVS134B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Eco-Plan"; Value = "Green (RoHS & no Sb/Br)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Iout(Max)(A)"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Iq(Typ)(mA)"; Value = "0.01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "8-Pin Plastic Small Outline, Body 3.9 x 4.9 mm, Pitch 1.27 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "DDA0008E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "4202561/F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "TPS7A7001DDA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubFamily"; Value = "Single Channel LDO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdo(Typ)(mV)"; Value = "170"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vin(Max)(V)"; Value = "6.5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vin(Min)(V)"; Value = "1.5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vout Adj(Max)(V)"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vout Adj(Min)(V)"; Value = "0.9"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=C3-1
+Added Pin To Net: NetName=5V Pin=U3-3
+Added Net: Name=5V
+Added Class: Name=Sheet3

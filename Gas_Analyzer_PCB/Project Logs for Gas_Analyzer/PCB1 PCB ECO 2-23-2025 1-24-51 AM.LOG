@@ -1,0 +1,6 @@
+Added Component: Designator=U?(SOT-223-DB3_N)
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "revB, Feb-2008"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Lead Plastic Small Outline Transistor (DB) [SOT-223]"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT-223-DB3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "revBB, Aug-2009"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Sheet3 Member=Component U? MCP1825S-5002E/DB

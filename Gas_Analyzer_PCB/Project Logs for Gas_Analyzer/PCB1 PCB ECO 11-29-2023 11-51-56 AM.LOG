@@ -1,0 +1,4 @@
+Change Component Comment : Designator=R? Old Comment=RN73R2ATTD2520B25 New Comment=252O
+Change Component Designator: OldDesignator=R? NewDesignator=RSET
+Added Pin To Net: NetName=GND Pin=RSET-1
+Added Pin To Net: NetName=NetRSET_2 Pin=RSET-2

@@ -1,0 +1,61 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Public\Documents\Altium\Gas_Analyzer\PCB1.PcbDoc
+Date     : 2/23/2025
+Time     : 2:25:56 PM
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=10mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=20mil) (Preferred=15mil) ((InNet('3.3V') OR InNet('3.3_MCU') OR InNet('5.0V') OR InNet('5.4V') OR InNet('+12') OR InNet('GND')))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+   Violation between Hole Size Constraint: (177.165mil > 100mil) Pad Free-q10(6670mil,16240mil) on Multi-Layer Actual Hole Size = 177.165mil
+   Violation between Hole Size Constraint: (177.165mil > 100mil) Pad Free-q11(13590mil,16240mil) on Multi-Layer Actual Hole Size = 177.165mil
+Rule Violations :2
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=1mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 10mil, Vertical Gap = 10mil ) (All),(All) 
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1929.134mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Waived Violations Of Rule : Minimum Solder Mask Sliver (Gap=6mil) (All),(All)
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (5.843mil < 6mil) Between Pad FAN 12V-1(8045.788mil,17325mil) on Multi-Layer And Pad FAN 12V-2(8045.788mil,17275.787mil) on Multi-Layer [Top Solder] Mask Sliver [5.843mil] / [Bottom Solder] Mask Sliver [5.843mil]Waived by Devansh Agrawal at 12/6/2023 11:54:19 AMits correct
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (5.843mil < 6mil) Between Pad FAN 5V-1(8094.213mil,15595mil) on Multi-Layer And Pad FAN 5V-2(8045mil,15595mil) on Multi-Layer [Top Solder] Mask Sliver [5.843mil] / [Bottom Solder] Mask Sliver [5.843mil]Waived by Devansh Agrawal at 12/6/2023 11:54:19 AMits correct
+Waived Violations :2
+
+
+Violations Detected : 2
+Waived Violations : 2
+Time Elapsed        : 00:00:01

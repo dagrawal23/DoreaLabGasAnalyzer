@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=5.0V Pin=C3-1
+Removed Pin From Net: NetName=5.0V Pin=C7-2
+Removed Pin From Net: NetName=5.0V Pin=R1-2
+Removed Pin From Net: NetName=5.0V Pin=U2-1
+Removed Pin From Net: NetName=5.0V Pin=U2-19
+Removed Pin From Net: NetName=5.0V Pin=U2-20
+Change Net Name : Old Net Name=5.0V New Net Name= 5.0V
+Change Net Name : Old Net Name=NetFeather_2 New Net Name=D1
+Change Net Name : Old Net Name=NetFeather_3 New Net Name=D2
+Change Net Name : Old Net Name=NetLED1_1 New Net Name=Rled1
+Change Net Name : Old Net Name=NetLED2_1 New Net Name=Rled2
+Change Net Name : Old Net Name=NetLED2_2 New Net Name=PG
+Added Pin To Net: NetName=5.0V Pin=C3-1
+Added Pin To Net: NetName=5.0V Pin=C7-2
+Added Pin To Net: NetName=5.0V Pin=R1-2
+Added Pin To Net: NetName=5.0V Pin=U2-1
+Added Pin To Net: NetName=5.0V Pin=U2-19
+Added Pin To Net: NetName=5.0V Pin=U2-20
+Added Net: Name=5.0V
+Added Member To Class: ClassName=Sheet1 Member=Component LED1 Red
+Added Member To Class: ClassName=Sheet1 Member=Component LED2 Red

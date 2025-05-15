@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=G138 Old Footprint=MQ-Footprint-A New Footprint=MQ-FOOTPRINT-C
+Added Member To Class: ClassName=Sheet2 Member=Component G4 MQ-Sensor
+Added Member To Class: ClassName=Sheet2 Member=Component G5 MQ-Sensor
+Added Member To Class: ClassName=Sheet2 Member=Component G6 MQ-Sensor
+Added Member To Class: ClassName=Sheet2 Member=Component G8 MQ-Sensor
+Added Member To Class: ClassName=Sheet2 Member=Component G9 MQ-Sensor

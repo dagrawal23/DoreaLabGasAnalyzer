@@ -1,0 +1,5 @@
+Added Component: Designator=G11(MQ-Footprint-A)
+Added Pin To Net: NetName=5.0V Pin=G11-1
+Added Pin To Net: NetName=AIN10 Pin=G11-2
+Added Pin To Net: NetName=GND Pin=G11-4
+Added Member To Class: ClassName=Sheet2 Member=Component G11 MQ-Sensor

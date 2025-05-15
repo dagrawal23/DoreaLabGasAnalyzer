@@ -1,0 +1,15 @@
+Added Component: Designator=IR1(IR sensor)
+Added Pin To Net: NetName=5.0V Pin=C3-1
+Added Pin To Net: NetName=5.0V Pin=C7-2
+Added Pin To Net: NetName=GND Pin=IR1-2
+Added Pin To Net: NetName=5.0V Pin=R1-2
+Added Pin To Net: NetName=5.0V Pin=U2-1
+Added Pin To Net: NetName=5.0V Pin=U2-19
+Added Pin To Net: NetName=5.0V Pin=U2-20
+Added Pin To Net: NetName=3.3_MCU Pin=Feather-15
+Added Pin To Net: NetName=3.3_MCU Pin=IR1-3
+Added Net: Name=3.3_MCU
+Added Pin To Net: NetName=D10 Pin=Feather-22
+Added Pin To Net: NetName=D10 Pin=IR1-1
+Added Net: Name=D10
+Added Member To Class: ClassName=Sheet1 Member=Component IR1 IR Sensor

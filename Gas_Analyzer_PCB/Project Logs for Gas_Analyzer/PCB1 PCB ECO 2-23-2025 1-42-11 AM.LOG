@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=C? NewDesignator=C9
+Change Component Designator: OldDesignator=C? NewDesignator=C10
+Change Component Designator: OldDesignator=U? NewDesignator=U4
+Added Member To Class: ClassName=Sheet3 Member=Component C10 4.7uF

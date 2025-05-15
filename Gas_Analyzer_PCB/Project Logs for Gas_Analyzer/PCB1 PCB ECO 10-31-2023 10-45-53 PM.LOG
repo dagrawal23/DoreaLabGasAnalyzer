@@ -1,0 +1,87 @@
+Added Component: Designator=C7(FP-CL21-IPC_B)
+Add component (AddParameter): Name = "Capacitance"; Value = "10uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Thickness"; Value = "0.053inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.049inch"; VariantName = "[No Variations]"
+Added Component: Designator=C8(FP-CL21-IPC_B)
+Add component (AddParameter): Name = "Capacitance"; Value = "10uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Thickness"; Value = "0.053inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.049inch"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=5.0V Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=5.2V Pin=C8-2
+Add Pin To Net: Unknown Pin: Pin G1-1
+Add Pin To Net: Unknown Pin: Pin G1-2
+Add Pin To Net: Unknown Pin: Pin G1-4
+Add Pin To Net: Unknown Pin: Pin G2-1
+Add Pin To Net: Unknown Pin: Pin G2-2
+Add Pin To Net: Unknown Pin: Pin G2-4
+Add Pin To Net: Unknown Pin: Pin G3-1
+Add Pin To Net: Unknown Pin: Pin G3-2
+Add Pin To Net: Unknown Pin: Pin G3-4
+Add Pin To Net: Unknown Pin: Pin G4-1
+Add Pin To Net: Unknown Pin: Pin G4-2
+Add Pin To Net: Unknown Pin: Pin G4-4
+Add Pin To Net: Unknown Pin: Pin G5-1
+Add Pin To Net: Unknown Pin: Pin G5-2
+Add Pin To Net: Unknown Pin: Pin G5-4
+Add Pin To Net: Unknown Pin: Pin G6-1
+Add Pin To Net: Unknown Pin: Pin G6-2
+Add Pin To Net: Unknown Pin: Pin G6-4
+Add Pin To Net: Unknown Pin: Pin G7-1
+Add Pin To Net: Unknown Pin: Pin G7-2
+Add Pin To Net: Unknown Pin: Pin G7-4
+Add Pin To Net: Unknown Pin: Pin G8-1
+Add Pin To Net: Unknown Pin: Pin G8-2
+Add Pin To Net: Unknown Pin: Pin G8-4
+Add Pin To Net: Unknown Pin: Pin G9-1
+Add Pin To Net: Unknown Pin: Pin G9-2
+Add Pin To Net: Unknown Pin: Pin G9-4
+Add Pin To Net: Unknown Pin: Pin G10-1
+Add Pin To Net: Unknown Pin: Pin G10-2
+Add Pin To Net: Unknown Pin: Pin G10-4
+Add Pin To Net: Unknown Pin: Pin G11-1
+Add Pin To Net: Unknown Pin: Pin G11-2
+Add Pin To Net: Unknown Pin: Pin G11-4
+Add Pin To Net: Unknown Pin: Pin G12-1
+Add Pin To Net: Unknown Pin: Pin G12-2
+Add Pin To Net: Unknown Pin: Pin G12-4
+Added Class: Name=Sheet2
+Added Member To Class: ClassName=Sheet1 Member=Component C7 10uF
+Added Member To Class: ClassName=Sheet1 Member=Component C8 10uF

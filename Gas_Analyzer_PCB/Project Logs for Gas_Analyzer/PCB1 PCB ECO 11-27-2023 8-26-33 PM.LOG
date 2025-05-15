@@ -1,0 +1,8 @@
+Added Component: Designator=FAN 5V(Molex 5021)
+Added Component: Designator=FAN 12V(Molex 5021)
+Added Pin To Net: NetName=5.2V Pin=FAN 5V-1
+Added Pin To Net: NetName=GND Pin=FAN 5V-2
+Added Pin To Net: NetName=+12 Pin=FAN 12V-1
+Added Pin To Net: NetName=GND Pin=FAN 12V-2
+Added Member To Class: ClassName=Sheet1 Member=Component FAN 5V
+Added Member To Class: ClassName=Sheet1 Member=Component FAN 12V

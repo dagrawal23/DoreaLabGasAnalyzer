@@ -1,0 +1,11 @@
+Added Component: Designator=Feather(MODULE_FEATHER_M0_BASIC_PROTO)
+Added Pin To Net: NetName=MISO Pin=Feather-4
+Added Pin To Net: NetName=MOSI Pin=Feather-5
+Added Pin To Net: NetName=SCK Pin=Feather-6
+Added Pin To Net: NetName=GND Pin=Feather-13
+Added Pin To Net: NetName=NetFeather_19 Pin=Feather-19
+Added Pin To Net: NetName=NetFeather_20 Pin=Feather-20
+Added Pin To Net: NetName=NetFeather_21 Pin=Feather-21
+Added Pin To Net: NetName=NetFeather_25 Pin=Feather-25
+Added Pin To Net: NetName=5.2V Pin=Feather-26
+Added Member To Class: ClassName=Sheet1 Member=Component Feather Adafruit Feather M0

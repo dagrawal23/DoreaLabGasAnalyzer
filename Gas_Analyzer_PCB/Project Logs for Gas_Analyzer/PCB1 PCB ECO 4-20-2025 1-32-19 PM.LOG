@@ -1,0 +1,17 @@
+Removed Member From Class: ClassName=Sheet2 Member=G8
+Removed Member From Class: ClassName=Sheet2 Member=G10
+Change Component Designator: OldDesignator=G1 NewDesignator=G4
+Change Component Designator: OldDesignator=G2 NewDesignator=G135
+Change Component Designator: OldDesignator=G3 NewDesignator=G9
+Change Component Designator: OldDesignator=G4 NewDesignator=G7
+Change Component Designator: OldDesignator=G5 NewDesignator=G6
+Change Component Designator: OldDesignator=G6 NewDesignator=G137
+Change Component Designator: OldDesignator=G7 NewDesignator=G8
+Change Component Designator: OldDesignator=G8 NewDesignator=G2
+Change Component Designator: OldDesignator=G9 NewDesignator=G3
+Change Component Designator: OldDesignator=G10 NewDesignator=G5
+Change Component Designator: OldDesignator=G11 NewDesignator=G136
+Change Component Designator: OldDesignator=G12 NewDesignator=G138
+Added Member To Class: ClassName=Sheet2 Member=Component G135 MQ-Sensor
+Added Member To Class: ClassName=Sheet2 Member=Component G137 MQ-Sensor
+Added Member To Class: ClassName=Sheet1 Member=Component J1 216843-1
